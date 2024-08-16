@@ -80,32 +80,27 @@ It's recommended to run this notebook in a conda environment to avoid dependency
 
 The first Jupyter Notebook (KNN.ipynb) is organized into the following sections:
 <ul>
-<li> Problem Description: Overview of what the objective of the project is </li> <br> 
-
+<li> Problem Description: Overview of what the objective of the project is about</li> 
 <li> Time Series and Lookback: An introduction and explanation to the concepts of time-series and lookback in the field of Artificial Intelligence </li>
 <li> Dataset Overview: a description of what the training and testing data contains </li>
    
 <li> Part 1A: KNN from Scratch <br>
-&emsp; 1) Imports: libraries imported to implement this part
+&emsp; 1) Imports: libraries imported to implement this part <br>
 &emsp; 2) Data Loading and Preprocessing: Steps to load and preprocess the dataset <br>
 &emsp; 3) Model Training: Training the KNN model from scratch <br>
-&emsp; 4) Model Evaluation: Evaluating and analyzing the performance of the model, using a plot and a written explanation </li> <br> 
+&emsp; 4) Model Evaluation: Evaluating and analyzing the performance of the model, using a plot and a written explanation </li> 
 &emsp; 5) Visualization of Actual and Predicted Path: a visual comparison of the actual trajectory of the micro-robot and the one predicted by the algorithm </li> <br> 
-<li> Part 1B: KNN using scikit-learn </li> <br> 
-<li> 
+<li> Part 1B: KNN using scikit-learn </li> 
 &emsp; Implementation of the KNN algorithm using the scikit-learn library
-</li>
   <br>
 </ul>
-
-<br> <br>
 
 The second Jupyter Notebook (RegressionTree.ipynb) is organized into the following sections:
 
 <li> Part 2: Regression Tree <br>
-&emsp; 1) Imports: libraries imported to implement this part
-&emsp; 2) Regression Tree Implementation: loading the data and training the Regression Tree model using the DecisionTreeRegressor() function of scikit-learn library  <br>
-&emsp; 3) Model Evaluation: Evaluating and analyzing the performance of the model, using a plot and a written explanation </li> <br> 
+&emsp; 1) Imports: libraries imported to implement this part <br>
+&emsp; 2) Regression Tree Implementation: loading the data and training the Regression Tree model using the DecisionTreeRegressor() function of scikit-learn library <br>
+&emsp; 3) Model Evaluation: Evaluating and analyzing the performance of the model, using a plot and a written explanation </li> 
 &emsp; 4) Visualization of Actual and Predicted Path: a visual comparison of the actual trajectory of the micro-robot and the one predicted by the algorithm </li> <br> 
 
 
