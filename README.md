@@ -118,38 +118,32 @@ Training Data
 ## Training and Visualization
 
 The entire training process alongside the maths involved is explained in detail in the jupyter notebook. 
-- Note: You need to be proficient in Calculus to fully understand the gradient descent algorithm, especially the concept of partial derivatives. Additionally, a good knowledge of Linear Algebra is required to understand the various matrix and vector operations that are performed in the assignment.
-
 
 ## Lessons
 
-A logistic regression project can teach a variety of valuable skills and concepts, including:
+An AI project such as the one implemented here, can teach a variety of valuable skills and concepts, including:
 
-- Data Preprocessing: How to clean and prepare data for analysis, including handling missing values, scaling features, and encoding categorical variables.
-
-- Feature Selection: Identifying which features (variables) are most important for making predictions and how to choose them effectively.
-
-- Model Building: Understanding how to build a logistic regression model, including splitting data into training and testing sets, fitting the model, and predicting outcomes.
-
-- Performance Evaluation: Using metrics like Root Mean Squared Error (RMSE) to evaluate the performance of your model and understand its accuracy.
-
-- Interpreting Results: Understanding the results of the logistic regression model and what they signify.
-
-- Algorithm Implementation: Learning about the underlying algorithm used in linear regression and how it optimizes the line of best fit.
 
 
 ## Screenshots
-<h3> Ridge Regression </h3>
+<h3> K-Nearest Neighbour (KNN) </h3>
 <h4> 1. This image shows how the value of the Root-Mean-Square-Error changes for various training and testing datasets as the value of the regularization parameter (lambda) is gradually increased from 0 to 10. The four datasets include the training and testing datasets of each of the analytical and gradient-descent solutions. </h4>
-<img src="pic1.png" width="450px"> <br> 
+<img src="pic11.png" width="450px"> <br> 
 
-<h4> 2. This image shows the output of the regression model with the least validation Root-Mean-Square-Error overlaid on top of the original mpg vs displacement data. </h4>
-<img src="pic2.png" width="450px"> <br> 
+<h4> 1. This image shows how the value of the Root-Mean-Square-Error changes for various training and testing datasets as the value of the regularization parameter (lambda) is gradually increased from 0 to 10. The four datasets include the training and testing datasets of each of the analytical and gradient-descent solutions. </h4>
+<img src="pic12.png" width="450px"> <br> 
 
+<h4> 1. This image shows how the value of the Root-Mean-Square-Error changes for various training and testing datasets as the value of the regularization parameter (lambda) is gradually increased from 0 to 10. The four datasets include the training and testing datasets of each of the analytical and gradient-descent solutions. </h4>
+<img src="pic13.png" width="450px"> <br> 
 
+<h3> Regression Tree </h3>
+<h4> 1. This image shows how the value of the Root-Mean-Square-Error changes for various training and testing datasets as the value of the regularization parameter (lambda) is gradually increased from 0 to 10. The four datasets include the training and testing datasets of each of the analytical and gradient-descent solutions. </h4>
+<img src="pic21.png" width="450px"> <br> 
 
+<h4> 1. This image shows how the value of the Root-Mean-Square-Error changes for various training and testing datasets as the value of the regularization parameter (lambda) is gradually increased from 0 to 10. The four datasets include the training and testing datasets of each of the analytical and gradient-descent solutions. </h4>
+<img src="pic22.png" width="450px"> <br> 
 
-
+ 
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
