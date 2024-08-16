@@ -121,26 +121,41 @@ The entire training process alongside the maths involved is explained in detail 
 
 ## Lessons
 
-An AI project such as the one implemented here, can teach a variety of valuable skills and concepts, including:
+An AI project such as the one implemented here, involved many challenges, including:
 
+1. **Handling Time Series Data:**
+   - **Challenge:** Working with time series data requires careful consideration of the temporal order and dependencies between observations. This can be tricky when predicting future values based on past data.
+   - **Solution:** To manage this, I implemented a lookback mechanism, which involved using previous observations to predict future values. For both KNN and Regression Tree models, this allowed me to capture temporal dependencies effectively.
+
+2. **Implementing KNN from Scratch:**
+   - **Challenge:** Building the KNN algorithm from scratch without relying on libraries like scikit-learn involved creating functions for distance calculation, finding nearest neighbors, and handling ties in predictions.
+   - **Solution:** I wrote custom functions for Euclidean distance and nearest neighbor selection. To handle ties, I implemented a mechanism to decrement k until a clear prediction was obtained, ensuring robust and accurate results.
+
+3. **Evaluating Model Performance:**
+   - **Challenge:** Choosing the right value of k for the KNN model and the lookback size for the Regression Tree model required extensive evaluation. The performance needed to be assessed using metrics like RMSE.
+   - **Solution:** I plotted RMSE values against different k values and lookback sizes to identify the optimal parameters. This involved iterating through various values and analyzing trends to select the best-performing configurations.
+
+4. **Handling Model Complexity and Overfitting:**
+   - **Challenge:** With increasing model complexity (e.g., higher k values or longer lookback periods), there was a risk of overfitting, where the model might perform well on training data but poorly on unseen data.
+   - **Solution:** I monitored performance metrics across various configurations and chose parameters that balanced model complexity and generalization. For KNN, I observed the trend in RMSE with varying k values, and for Regression Trees, I tested different lookback sizes to find the optimal trade-off.
 
 
 ## Screenshots
 <h3> K-Nearest Neighbour (KNN) </h3>
-<h4> 1. This image shows how the value of the Root-Mean-Square-Error changes for various training and testing datasets as the value of the regularization parameter (lambda) is gradually increased from 0 to 10. The four datasets include the training and testing datasets of each of the analytical and gradient-descent solutions. </h4>
+<h4> 1. This image shows how the value of the Root-Mean-Square-Error changes for increasing values of k. Further explanation of the results of the plot are explained in detail in the Jupyter Notebook. </h4>
 <img src="pic11.png" width="450px"> <br> 
 
-<h4> 1. This image shows how the value of the Root-Mean-Square-Error changes for various training and testing datasets as the value of the regularization parameter (lambda) is gradually increased from 0 to 10. The four datasets include the training and testing datasets of each of the analytical and gradient-descent solutions. </h4>
+<h4> 2. This image shows the trajectory of the actual path of the micro-robot along with the trajectory predicted by the KNN algorithm <strong> implemented from scratch </strong>. You can change the value of 'start_second' in the code to compare the two trajectories for different six-second sets of times.  </h4>
 <img src="pic12.png" width="450px"> <br> 
 
-<h4> 1. This image shows how the value of the Root-Mean-Square-Error changes for various training and testing datasets as the value of the regularization parameter (lambda) is gradually increased from 0 to 10. The four datasets include the training and testing datasets of each of the analytical and gradient-descent solutions. </h4>
+<h4> 3. This image shows the trajectory of the actual path of the micro-robot along with the trajectory predicted by the KNN algorithm <strong> implemented using the scikit-learn library </strong>. You can change the value of 'start_second' in the code to compare the two trajectories for different six-second sets of times.  </h4>
 <img src="pic13.png" width="450px"> <br> 
 
 <h3> Regression Tree </h3>
-<h4> 1. This image shows how the value of the Root-Mean-Square-Error changes for various training and testing datasets as the value of the regularization parameter (lambda) is gradually increased from 0 to 10. The four datasets include the training and testing datasets of each of the analytical and gradient-descent solutions. </h4>
+<h4> 1. This image shows how the value of the Root-Mean-Square-Error changes for increasing values of Lookback Size. Further explanation of the results of the plot are explained in detail in the Jupyter Notebook. </h4>
 <img src="pic21.png" width="450px"> <br> 
 
-<h4> 1. This image shows how the value of the Root-Mean-Square-Error changes for various training and testing datasets as the value of the regularization parameter (lambda) is gradually increased from 0 to 10. The four datasets include the training and testing datasets of each of the analytical and gradient-descent solutions. </h4>
+<h4> 2. This image shows the trajectory of the actual path of the micro-robot along with the trajectory predicted by the KNN algorithm implemented using the scikit-learn library. You can change the value of 'start_second' in the code to compare the two trajectories for different six-second sets of times. </h4>
 <img src="pic22.png" width="450px"> <br> 
 
  
